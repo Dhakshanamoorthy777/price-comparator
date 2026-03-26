@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* Container */
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    width: 350px;
+    max-width: 90%;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+/* Heading */
+h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+/* Input */
+input {
+    width: 90%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+/* Button */
+button {
+    margin-top: 15px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+/* Results */
+.results {
+    margin-top: 20px;
+}
+
+/* Row for logo + text */
+.row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* ✅ FIXED LOGO */
+.logo {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    background: white;
+    padding: 4px;
+    border-radius: 6px;
+}
+
+/* Cards */
+.card {
+    background: rgba(255,255,255,0.2);
+    margin: 12px 0;
+    padding: 15px;
+    border-radius: 12px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+
+    /* Animation */
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Hover animation */
+.card:hover {
+    transform: translateY(-5px) scale(1.02);
+}
+
+/* Highlight cheapest */
+.cheapest {
+    border: 2px solid #00ffcc;
+    box-shadow: 0 0 15px #00ffcc;
+}
+
+/* Loading text */
+.loading {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+/* ✨ Fade animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 📱 MOBILE RESPONSIVE */
+@media (max-width: 600px) {
+
+    .container {
+        padding: 20px;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    input {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .card {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .logo {
+        width: 24px;
+        height: 24px;
+    }
+}

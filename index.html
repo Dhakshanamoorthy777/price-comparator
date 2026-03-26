@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+
+<div class="container">
+
+    <h1>🛒 Price Comparator</h1>
+
+    <input type="text" id="product" placeholder="Enter product">
+    <br>
+    <button onclick="getPrices()">Compare</button>
+
+    <div class="loading" id="loading">⏳ Loading...</div>
+
+    <div class="results">
+
+    <div id="amazon" class="card">
+        <div class="row">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" class="logo">
+            <span id="amazonText">Amazon: --</span>
+        </div>
+    </div>
+
+    <div id="flipkart" class="card">
+        <div class="row">
+            <img src="https://logos-world.net/wp-content/uploads/2020/11/Flipkart-Logo.png" class="logo">
+            <span id="flipkartText">Flipkart: --</span>
+        </div>
+    </div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
