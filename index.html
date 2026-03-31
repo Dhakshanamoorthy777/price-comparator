@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CompareX</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">🛒 CompareX</div>
+
+    <input type="text" class="nav-search" placeholder="Search products...">
+
+    <div class="nav-right">👤 Login</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Find <span>Real Deals</span><br>Skip the Fake Ones</h1>
+    <p>Compare prices across stores and save money instantly</p>
+
+    <div class="hero-search">
+        <!-- ⚠️ DO NOT CHANGE ID -->
+        <input type="text" id="product" placeholder="Search or compare product..." onkeypress="handleKey(event)">
+        <button onclick="getPrices()">🔍 Compare Prices</button>
+    </div>
+</section>
+
+<!-- 🔥 COMPARISON -->
+<section id="compareSection" class="results-section" style="display:none;">
+    <h2>🔍 Comparison Results</h2>
+
+    <!-- ⚠️ GLOBAL WARNING -->
+    <div id="warningBanner" class="warning-banner" style="display:none;">
+        ⚠️ Some prices are estimated due to restricted access from certain platforms.
+    </div>
+
+    <div id="productContainer" class="products"></div>
+</section>
+
+<!-- PRODUCTS (STATIC / OPTIONAL) -->
+<section class="results-section">
+    <h2>🛒 Popular Products</h2>
+    <div id="productList" class="products"></div>
+</section>
+
+<!-- ABOUT -->
+<section class="about">
+    <h2>Why Choose CompareX?</h2>
+
+    <div class="about-cards">
+        <div class="about-card">
+            ⚡ <h3>Fast Comparison</h3>
+            <p>Instantly compare prices from multiple stores</p>
+        </div>
+
+        <div class="about-card">
+            💰 <h3>Best Deals</h3>
+            <p>Find the lowest price without searching everywhere</p>
+        </div>
+
+        <div class="about-card">
+            🛍️ <h3>Multiple Stores</h3>
+            <p>Amazon, Flipkart & grocery platforms in one place</p>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 CompareX | Built with ❤️ for smart shopping</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
